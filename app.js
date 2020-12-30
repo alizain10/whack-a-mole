@@ -30,7 +30,7 @@ square.forEach(id => {
 
 function moveMole() {
   let timerId = null
-  timerId = setInterval(randomSquare, 500)
+  timerId = setInterval(randomSquare, 1000)
 }
 
 moveMole()
@@ -42,7 +42,7 @@ function countDown() {
 
   if(currentTime === 0 ) {
     clearInterval(timerId)
-    alert('GAME OVER! Your final score is' + result)
+    alert('GAME OVER! Your final score is ' + result)
   }
 }
 
